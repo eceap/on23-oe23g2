@@ -6,7 +6,7 @@ Campo|Detalle
 ------|-----------
 Nombre de Proyecto| "Nnnn"
 Número de Grupo | x
-Alumnos| Nombre_Apellido1
+Alumnos| Ezequiel Escudero 
 |  | Nombre_Apellido2
 |  | Nombre_Apellido3
 |  | Nombre_Apellido4
