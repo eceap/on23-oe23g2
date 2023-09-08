@@ -6,8 +6,8 @@ Campo|Detalle
 ------|-----------
 Nombre de Proyecto| "Nnnn"
 Número de Grupo | x
-Alumnos| Nombre_Apellido1
-|  | Nombre_Apellido2
+Alumnos| Ezequiel Escudero 
+|  | Julian Gando
 |  | Nombre_Apellido3
 |  | Nombre_Apellido4
 Curso| 6°Electrónica
