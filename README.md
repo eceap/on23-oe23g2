@@ -5,13 +5,13 @@ Completen con sus datos la siguiente tabla:
 Campo|Detalle
 ------|-----------
 Nombre de Proyecto| "Nnnn"
-Número de Grupo | x
+Número de Grupo | 2
 Alumnos| Ezequiel Escudero 
 |  | Julian Gando
-|  | Nombre_Apellido3
-|  | Nombre_Apellido4
+|  | Francisco Chmielnicki
+|  | Miguel Ashkar
 Curso| 6°Electrónica
-Año| 20XX
+Año| 2023
 
 ## Descripción del Proyecto
 Texto.
