@@ -4,7 +4,7 @@ Para trabajar con el grupo de proyecto
 Completen con sus datos la siguiente tabla:
 Campo|Detalle
 ------|-----------
-Nombre de Proyecto| "Nnnn"
+Nombre de Proyecto| "Circuito Inversor"
 Número de Grupo | 2
 Alumnos| Ezequiel Escudero 
 |  | Julian Gando
