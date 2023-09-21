@@ -12,10 +12,12 @@ void appInit(void) {
 
     /* Configura funciones analógicas y dirección de los Ports de I/O */
     ANSELA = 0;
-    //ANSELH = 0;
+    ANSELB = 0;
+    ANSELC = 0;
+    ANSC3 = 1;          //Entrada 15 Analogica
     TRIS_TEC1 = 1;
  
-    TRIS_OPTO = 1;
+    
     TRIS_ZENNER = 1;
     TRIS_QA = 1;
     TRIS_QB = 1;
@@ -34,4 +36,8 @@ void appInit(void) {
     TMR0IE = 1;     //Habilita interrupcion para tick
     //PEIE = 1;
     GIE = 1;
+    
+    SWDTEN = 1;     // Habilito el WDT
+    
+    
 }

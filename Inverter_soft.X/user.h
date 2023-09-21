@@ -8,18 +8,22 @@
 /* TODO: Los parámetros de user.c pueden ponerse aquí */
     
 //Teclas
-#define	TRIS_TEC1       TRISBbits.TRISB0
-#define	PIN_TEC1        PORTBbits.RB0
+#define	TRIS_TEC1       TRISAbits.TRISA1
+#define	PIN_TEC1        PORTAbits.RA1
 
 //Entradas
-#define TRIS_OPTO       TRISCbits.TRISC2
-#define PIN_OPTO        PORTCbits.RC2 
+
+#define PIN_OPTO        PORTEbits.RE3 
 #define TRIS_ZENNER     TRISCbits.TRISC3      
 #define PIN_ZENNER      PORTCbits.RC3   
 #define TRIS_QA         TRISCbits.TRISC4
 #define PIN_QA          PORTCbits.RC4
 #define TRIS_QB         TRISCbits.TRISC5
 #define PIN_QB          PORTCbits.RC5
+#define TRIS_QA_CI      TRISCbits.TRISC1
+#define PIN_QA_CI       PORTCbits.RC1
+#define TRIS_QB_CI      TRISCbits.TRISC2
+#define PIN_QB_CI       PORTCbits.RC2
 #define TRIS_FUSIBLE    TRISCbits.TRISC6
 #define PIN_FUSIBLE     PORTCbits.RC6
 
@@ -52,8 +56,8 @@
 #define	PIN_LED_FALLA_GENERAL   PIN_LED6  //LED que informa falla general (Rojo)
 
 //Buzzer
-#define	TRIS_BUZZER    TRISCbits.TRISC1
-#define	PIN_BUZZER     PORTCbits.RC1
+#define	TRIS_BUZZER    TRISCbits.TRISC0
+#define	PIN_BUZZER     PORTCbits.RC0
 
 /*==================[declaraciones de funciones externas]====================*/
 void appInit(void);     /* Inicializa las I/O y los periféricos */

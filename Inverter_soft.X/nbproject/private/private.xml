@@ -3,12 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Z:/Inverter_soft.X/user.c</file>
-            <file>file:/Z:/Inverter_soft.X/tick.c</file>
-            <file>file:/Z:/Inverter_soft.X/user.h</file>
-            <file>file:/Z:/Inverter_soft.X/interrupts.c</file>
-            <file>file:/Z:/Inverter_soft.X/tick.h</file>
-            <file>file:/Z:/Inverter_soft.X/main.c</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/system.h</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/user.c</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/uart.h</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/main.c</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/adc.c</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/uart.c</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/tick.c</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/adc.h</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/tick.h</file>
+            <file>file:/Z:/github/on23-oe23g2/Inverter_soft.X/user.h</file>
         </group>
     </open-files>
 </project-private>
