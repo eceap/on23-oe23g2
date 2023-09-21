@@ -2,7 +2,7 @@
 #include <stdint.h>     /* Para las definiciones de uint8_t por ej.*/
 #include "system.h"     /* Funciones/Parametros System, como osc/peripheral config */
 #include "user.h"       /* Funciones/Parametros User, como InitApp */
-//#include "uart.h"       /* Funciones/Parametros Uart */
+#include "uart.h"       /* Funciones/Parametros Uart */
 #include "adc.h"        /* Funciones/parametros del ADC*/
 #include "tick.h"       /* Funciones/Parametros Tick */
 #include <stdio.h>      /* Archivo de Encabezados StdIO */
@@ -15,11 +15,11 @@ typedef enum {INICIAL, CORRECTO, FALLAS, DIAGNOSTICO} estadoMEF_t;
 estadoMEF_t  estadoActual; // Variable de estado (global)
 tick_t tInicio; 
 /*Mensajes de puerto serie*/
-char MSJ_FallaFuse[] = {"FalloElFusible-"};  
-char MSJ_FallaCI[] = {"FalloElIntegrado-"};         //Arrays de caracteres 
-char MSJ_FallaRegulador[] = {"FalloElRegulador-"};  //Para puerto serie 
-char MSJ_FallaGeneral[] = {"FallaGeneral-"};
-char MSJ_Normal[] = {"TodoCorrecto-"};
+unsigned char MSJ_FallaFuse[] = {"FalloElFusible-"};  
+unsigned char MSJ_FallaCI[] = {"FalloElIntegrado-"};         //Arrays de caracteres 
+unsigned char MSJ_FallaRegulador[] = {"FalloElRegulador-"};  //Para puerto serie 
+unsigned char MSJ_FallaGeneral[] = {"FallaGeneral-"};
+unsigned char MSJ_Normal[] = {"TodoCorrecto-"};
 /*==================[definiciones de datos externos]=========================*/
 
 /*==================[declaraciones de funciones internas]====================*/
@@ -78,8 +78,7 @@ void ActualizarMEF(void) {
             
             if (FallaFuse == 1) {
                 for (uint8_t i; i < sizeof MSJ_FallaFuse; i++) {
-                    char value = MSJ_FallaFuse[i];
-                    uart2WriteByte(value);
+                    uart2WriteByte(MSJ_FallaFuse[i]);
                 }
             }
             break;
