@@ -7,10 +7,6 @@
 /* User Level #define Macros                                                 */
 /* TODO: Los parámetros de user.c pueden ponerse aquí */
     
-//Teclas
-#define	TRIS_TEC1       TRISAbits.TRISA1
-#define	PIN_TEC1        PORTAbits.RA1
-
 //Entradas
 
 #define PIN_OPTO        PORTEbits.RE3 
