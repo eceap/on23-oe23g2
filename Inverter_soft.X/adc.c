@@ -1,4 +1,6 @@
 #include "adc.h"
+#include "system.h"
+#include <stdio.h>
 #include <xc.h>
 void adcInit(void) {
     CHS0 = 0;

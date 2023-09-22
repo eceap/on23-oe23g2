@@ -4,7 +4,8 @@
 
 #include "system.h"     /* Funciones/Parametros System, como conf de osc/perif */
 #include "user.h"       /* Funciones/Parametros User, como InitApp */
-//#include "uart.h"       /* Funciones/Parametros Uart */
+#include "uart.h"       /* Funciones/Parametros Uart */
+#include "adc.h"
 #include "tick.h"       /* Funciones/Parametros Tick */
 
 void appInit(void) {
@@ -31,7 +32,8 @@ void appInit(void) {
     TRIS_FALLA_GENERAL = 0;
     
     tickInit();
-
+    uartInit();
+    adcInit();
     //Habilita Interrupciones si es necesario
     TMR0IE = 1;     //Habilita interrupcion para tick
     //PEIE = 1;
