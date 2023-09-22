@@ -8,6 +8,8 @@
 /* TODO: Los parámetros de user.c pueden ponerse aquí */
     
 //Entradas
+#define PIN_TEC1        PORTAbits.RA1
+#define TRIS_TEC1       TRISAbits.TRISA1  
 
 #define PIN_OPTO        PORTEbits.RE3 
 #define TRIS_ZENNER     TRISCbits.TRISC3      
