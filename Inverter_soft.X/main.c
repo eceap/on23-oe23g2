@@ -9,7 +9,8 @@
 
 /*=======================[definiciones & Macros]=============================*/
 
-
+#define Vmax 3828 // tension maxima en mV
+#define Vmin 2470 // tension minima en mV
 
 typedef enum {INICIAL, CORRECTO, FALLAS, DIAGNOSTICO} estadoMEF_t;
 
@@ -162,7 +163,8 @@ void apagarLedsFallas(void) {
 
 uint8_t diagnosticar(void) {
     uint8_t Fallas = 0;
-    if (adcRead_mV(IAN15) < 2470) {
+    uint16_t medicion = adcRead_mV(IAN15);
+    if (medicion < Vmin || medicion > Vmax) {
         FallaRegulador = 1;
         Fallas = 1;
     }
