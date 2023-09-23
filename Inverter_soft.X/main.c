@@ -56,7 +56,15 @@ void main(void) {
 
 void InicializarMEF(void) {
     estadoActual = INICIAL; // Establece estado inicial 
-    tInicio = tickRead(); // También inicia temporizacion    
+    tInicio = tickRead(); // También inicia temporizacion 
+    tQA = tInicio;
+    tQA_0 = tInicio;
+    tQB = tInicio;
+    tQB_0 = tInicio;
+    tQA_CI = tInicio;
+    tQA_CI_0 = tInicio;
+    tQB_CI = tInicio;
+    tQB_CI_0 = tInicio;
 }
 
 //Función Actualizar MEF
