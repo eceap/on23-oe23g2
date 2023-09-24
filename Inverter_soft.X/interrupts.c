@@ -1,4 +1,5 @@
 #include <xc.h>             /* Archivo de Encabezados General XC8 */
+#include "system.h"
 #include "tick.h"           /* Funciones/Parametros Tick */
 
 /*==================[declaraciones de funciones internas]====================*/
